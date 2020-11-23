@@ -39,7 +39,6 @@ nav:
     - 生物信息软件: application/bio.md
     - Conda 安装软件: application/conda.md
     - ABINIT: application/abinit.md
-    - Amber: application/amber.md
     - CESM: application/cesm.md
     - Gromacs: application/gromacs.md
     - Lammps: application/lammps.md
@@ -52,14 +51,12 @@ nav:
     - Relion: application/relion.md
     - STAR-CCM+: application/star-ccm.md
     - TensorFlow: application/tensorflow.md
-    - VASP: application/vasp.md
     - VMD: application/vmd.md    
     - Keras: application/keras.md
     - SIESTA: application/siesta.md
     - CP2k: application/cp2k.md
     - DeepVariant: application/deepvariant.md
     - Geant4: application/geant4.md
-    - GAUSSIAN: application/gaussian.md
     - Gnuplot: application/gnuplot.md
     - OVITO: application/ovito.md
   #   - Desmond and Maestro: 应用软件/desmond_and_maestro.md  
