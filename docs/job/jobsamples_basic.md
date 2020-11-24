@@ -173,31 +173,6 @@ small, cpu, dgx2 队列允许的作业运行最长时间为 7 天。huge 和 192
     srun --mpi=pmi2 lmp -i YOUR_INPUT_FILE
     ```
 
-### VASP
-
-!!! example "cpu 队列 slurm 脚本示例 VASP"
-    ```
-    #!/bin/bash
-    
-    #SBATCH --job-name=test           # 作业名
-    #SBATCH --partition=cpu           # cpu 队列
-    #SBATCH -n 80                     # 使用核数 80
-    #SBATCH --ntasks-per-node=40      # 每节点核数
-    #SBATCH --output=%j.out
-    #SBATCH --error=%j.err
-
-    module purge
-    module load intel-parallel-studio/cluster.2018.4-intel-18.0.4
-
-    export I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so
-    export I_MPI_FABRICS=shm:ofi
-
-    ulimit -s unlimited
-    ulimit -l unlimited
-
-    srun /path/to/your_vasp_dir/bin/vasp_std
-    ```
-
 ### GROMACS
 
 !!! example "cpu 队列 slurm 脚本示例 GROMACS"
